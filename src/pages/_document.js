@@ -14,6 +14,7 @@ class MyDocument extends Document {
                         href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"
                         rel="stylesheet"
                     />
+                    <link href='src/styles/global.css' />
                 </Head>
                 <body className="antialiased">
                     <Main />

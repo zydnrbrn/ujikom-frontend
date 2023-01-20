@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "articulat-normal";
+  src: url("../../public/fonts/Articulat-CF/ArticulatCF-Normal.otf");
+}
+
+.mainFont {
+  font-family: 'articulat-normal' ;
+  font-weight: bold;
+  font-size: 3rem;
+}

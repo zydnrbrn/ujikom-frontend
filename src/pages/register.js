@@ -8,6 +8,7 @@ import Label from '@/components/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'
+import styles from '../styles/Home.module.css'
 
 const Register = () => {
     const { register } = useAuth({
@@ -34,6 +35,8 @@ const Register = () => {
     }
 
     return (
+        <>
+        <div className={styles.mainFont}>
         <GuestLayout>
             <AuthCard
                 logo={
@@ -130,6 +133,8 @@ const Register = () => {
                 </form>
             </AuthCard>
         </GuestLayout>
+        </div>
+        </>
     )
 }
 

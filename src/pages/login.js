@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import styles from '../styles/Home.module.css';
 
 const Login = () => {
     const router = useRouter()
@@ -46,6 +47,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        <div className={styles.mainFont}>
         <GuestLayout>
             <AuthCard
                 logo={
@@ -127,6 +130,8 @@ const Login = () => {
                 </form>
             </AuthCard>
         </GuestLayout>
+        </div>
+        </>
     )
 }
 
